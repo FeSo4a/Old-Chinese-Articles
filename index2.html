@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文言文 - 第二册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            border-right: 1px solid #ddd;
+            padding: 20px 0;
+            overflow-y: auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .sidebar h3 {
+            padding: 0 20px 15px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-list li {
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .chapter-list li:hover {
+            background-color: #f5f5f5;
+            border-left-color: #007acc;
+        }
+
+        .chapter-list a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            font-size: 14px;
+        }
+
+        .chapter-list a:hover {
+            color: #007acc;
+        }
+
+        .content {
+            flex: 1;
+            margin-left: 250px;
+            padding: 20px;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+
+        .content-area {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+
+            .content {
+                margin-left: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                height: auto;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h3>章节目录</h3>
+    <ul class="chapter-list">
+        <li><a href="index2.html">零、 引言</a></li>
+        <li><a href="c2/52.html">五十二、 歧路亡羊</a></li>
+        <li><a href="c2/53.html">五十三、 医者善外科</a></li>
+        <li><a href="c2/54.html">五十四、 陆绩怀橘</a></li>
+        <li><a href="c2/55.html">五十五、 赵广拒画</a></li>
+        <li><a href="c2/56.html">五十六、 赛跑定案</a></li>
+        <li><a href="c2/57.html">五十七、 感泣众盗</a></li>
+        <li><a href="c2/58.html">五十八、 荀巨伯远看友人疾</a></li>
+        <li><a href="c2/59.html">五十九、 陈晋之读书法</a></li>
+        <li><a href="c2/60.html">六十、 养鸟有道</a></li>
+        <li><a href="c2/61.html">六十一、 盲子道涸溪</a></li>
+        <li><a href="c2/62.html">六十二、 狼三则（其一）</a></li>
+        <li><a href="c2/63.html">六十三、 狼三则（其三）</a></li>
+        <li><a href="c2/64.html">六十四、 楚鸡</a></li>
+        <li><a href="c2/65.html">六十五、 赵人患鼠</a></li>
+        <li><a href="c2/66.html">六十六、 孙权劝学</a></li>
+        <li><a href="c2/67.html">六十七、 吕蒙诵《易》</a></li>
+        <li><a href="c2/68.html">六十八、 赵母训子</a></li>
+        <li><a href="c2/69.html">六十九、 吕蒙正不为物累</a></li>
+        <li><a href="c2/70.html">七十、 曹彬仁爱</a></li>
+        <li><a href="c2/71.html">七十一、 狄仁杰</a></li>
+        <li><a href="c2/72.html">七十二、 归计决矣</a></li>
+        <li><a href="c2/73.html">七十三、 张仪受笞</a></li>
+        <li><a href="c2/74.html">七十四、 韩琦大度容人</a></li>
+        <li><a href="c2/75.html">七十五、 刘安世为谏官</a></li>
+        <li><a href="c2/76.html">七十六、 辛弃疾斩义端</a></li>
+        <li><a href="c2/77.html">七十七、 姜才力战</a></li>
+        <li><a href="c2/78.html">七十八、 礼遣韩彦直</a></li>
+        <li><a href="c2/79.html">七十九、 一生之计在于勤</a></li>
+        <li><a href="c2/80.html">八十、 涸泽之蛇</a></li>
+        <li><a href="c2/81.html">八十一、 陋室铭</a></li>
+        <li><a href="c2/82.html">八十二、 爱莲说</a></li>
+        <li><a href="c2/83.html">八十三、 二叟钓鱼</a></li>
+        <li><a href="c2/84.html">八十四、 鼠技虎名</a></li>
+        <li><a href="c2/85.html">八十五、 君子济</a></li>
+        <li><a href="c2/86.html">八十六、 韩湟</a></li>
+        <li><a href="c2/87.html">八十七、 伊犁凿井</a></li>
+        <li><a href="c2/88.html">八十八、 人有鱼池</a></li>
+        <li><a href="c2/89.html">八十九、 银烛</a></li>
+        <li><a href="c2/90.html">九十、 夔有一足</a></li>
+        <li><a href="c2/91.html">九十一、 反裘负刍</a></li>
+        <li><a href="c2/92.html">九十二、 活板</a></li>
+        <li><a href="c2/93.html">九十三、 越工善为舟</a></li>
+        <li><a href="c2/94.html">九十四、 君子树竹</a></li>
+        <li><a href="c2/95.html">九十五、 无畏阶祸</a></li>
+        <li><a href="c2/96.html">九十六、 良狗捕鼠</a></li>
+        <li><a href="c2/97.html">九十七、 郢人燕说</a></li>
+        <li><a href="c2/98.html">九十八、 金壶丹书</a></li>
+        <li><a href="c2/99.html">九十九、 人有其宝</a></li>
+        <li><a href="c2/100.html">一百、 答谢中书书</a></li>
+        <li><a href="c2/101.html">一百零一、 王烈以德威人</a></li>
+        <li><a href="c2/102.html">一百零二、 势利鬼吴生</a></li>
+        <li><a href="c2/103.html">一百零三、 东坡与钱穆父</a></li>
+        <li><a href="c2/104.html">一百零四、 吴起</a></li>
+        <li><a href="c2/105.html">一百零五、 牟羹尧用兵</a></li>
+        <li><a href="c2/106.html">一百零六、 秦西巴纵麑</a></li>
+        <li><a href="c2/107.html">一百零七、 王安石待客</a></li>
+        <li><a href="c2/108.html">一百零八、 一轴鼠画</a></li>
+        <li><a href="c2/109.html">一百零九、 苏轼成才</a></li>
+        <li><a href="c2/110.html">一百一十、 曾子衣敝衣</a></li>
+        <li><a href="c2/111.html">一百一十一、 张耳</a></li>
+        <li><a href="c2/112.html">一百一十二、 顾荣施炙</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div class="content-area">
+        <h1>文言文 - 第二册</h1>
+        <p>欢迎阅读文言文。请在左侧目录中选择要阅读的章节，点击后将在本窗口加载相应内容。</p>
+        <p>
+            本专辑收录了作者初中时期所有做过笔记的中国古代经典文献的精选篇章，涵盖哲学、历史、文学等多个领域，旨在帮助读者更好地理解和欣赏中华传统文化的精髓。</p>
+        <ul>
+            <li><a href="index.html">返回总目录</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

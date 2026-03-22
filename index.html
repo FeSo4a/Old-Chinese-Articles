@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笔记 - 文言文</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            border-right: 1px solid #ddd;
+            padding: 20px 0;
+            overflow-y: auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .sidebar h3 {
+            padding: 0 20px 15px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .chapter-list {
+            list-style: none;
+        }
+        .chapter-list li {
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+        .chapter-list li:hover {
+            background-color: #f5f5f5;
+            border-left-color: #007acc;
+        }
+        .chapter-list a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            font-size: 14px;
+        }
+        .chapter-list a:hover {
+            color: #007acc;
+        }
+        .content {
+            flex: 1;
+            margin-left: 250px;
+            padding: 20px;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+        .content-area {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .content {
+                margin-left: 200px;
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                height: auto;
+            }
+            .content {
+                margin-left: 0;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>章节目录</h3>
+        <ul class="chapter-list">
+            <li><a href="index1.html">第一册</a></li>
+            <li><a href="index2.html">第二册</a></li>
+            <li><a href="index3.html">第三册</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="content-area">
+            <h1>文言文</h1>
+            <p>欢迎阅读文言文。请在左侧目录中选择要阅读的章节，点击后将在本窗口加载相应内容。</p>
+            <p>本专辑收录了作者初中时期所有做过笔记的中国古代经典文献的精选篇章，涵盖哲学、历史、文学等多个领域，旨在帮助读者更好地理解和欣赏中华传统文化的精髓。</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文言文 - 第一册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            border-right: 1px solid #ddd;
+            padding: 20px 0;
+            overflow-y: auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .sidebar h3 {
+            padding: 0 20px 15px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .chapter-list {
+            list-style: none;
+        }
+        .chapter-list li {
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+        .chapter-list li:hover {
+            background-color: #f5f5f5;
+            border-left-color: #007acc;
+        }
+        .chapter-list a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            font-size: 14px;
+        }
+        .chapter-list a:hover {
+            color: #007acc;
+        }
+        .content {
+            flex: 1;
+            margin-left: 250px;
+            padding: 20px;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+        .content-area {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .content {
+                margin-left: 200px;
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                height: auto;
+            }
+            .content {
+                margin-left: 0;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>章节目录</h3>
+        <ul class="chapter-list">
+            <li><a href="index1.html">零、 引言</a></li>
+            <li><a href="c1/1.html">一、 管鲍之交</a></li>
+            <li><a href="c1/2.html">二、 割席断交</a></li>
+            <li><a href="c1/3.html">三、 朱文公受骗</a></li>
+            <li><a href="c1/4.html">四、 宋仁宗忍饥</a></li>
+            <li><a href="c1/5.html">五、 伯牙鼓琴</a></li>
+            <li><a href="c1/6.html">六、 伯牙游于泰山之阴</a></li>
+            <li><a href="c1/7.html">七、 书戴岸嵩画牛</a></li>
+            <li><a href="c1/8.html">八、 书黄筌画雀</a></li>
+            <li><a href="c1/9.html">九、 正午牡丹</a></li>
+            <li><a href="c1/10.html">十、 悔学</a></li>
+            <li><a href="c1/11.html">十一、 楚人学舟</a></li>
+            <li><a href="c1/12.html">十二、 一知半解</a></li>
+            <li><a href="c1/13.html">十三、 牛郎织女</a></li>
+            <li><a href="c1/14.html">十四、 北人食菱</a></li>
+            <li><a href="c1/15.html">十五、 东坡逸事</a></li>
+            <li><a href="c1/16.html">十六、 孔子学琴</a></li>
+            <li><a href="c1/17.html">十七、 李广射虎</a></li>
+            <li><a href="c1/18.html">十八、 苏武牧羊</a></li>
+            <li><a href="c1/19.html">十九、 投笔从戎</a></li>
+            <li><a href="c1/20.html">二十、 杨布打狗</a></li>
+            <li><a href="c1/21.html">二十一、 薛谭学讴</a></li>
+            <li><a href="c1/22.html">二十二、 举目见日，不见长安</a></li>
+            <li><a href="c1/23.html">二十三、 陈太丘与友期行</a></li>
+            <li><a href="c1/24.html">二十四、 咏雪</a></li>
+            <li><a href="c1/25.html">二十五、 王羲之书六角扇</a></li>
+            <li><a href="c1/26.html">二十六、 范仲淹勤学</a></li>
+            <li><a href="c1/27.html">二十七、 《论语》十二章</a></li>
+            <li><a href="c1/28.html">二十八、 诫子书</a></li>
+            <li><a href="c1/29.html">二十九、 枭将东徙</a></li>
+            <li><a href="c1/30.html">三十、 蔡勉旃坚还亡友财</a></li>
+            <li><a href="c1/31.html">三十一、 农夫耕于田</a></li>
+            <li><a href="c1/32.html">三十二、 芦衣顺母</a></li>
+            <li><a href="c1/33.html">三十三、 赵威后问齐使</a></li>
+            <li><a href="c1/34.html">三十四、 鹿亦有知</a></li>
+            <li><a href="c1/35.html">三十五、 朝三暮四</a></li>
+            <li><a href="c1/36.html">三十六、 张孝基仁爱</a></li>
+            <li><a href="c1/37.html">三十七、 宋濂苦学</a></li>
+            <li><a href="c1/38.html">三十八、 囫囵吞枣</a></li>
+            <li><a href="c1/39.html">三十九、 原谷谏父</a></li>
+            <li><a href="c1/40.html">四十、 砚眼</a></li>
+            <li><a href="c1/41.html">四十一、 鲁恭治中牟</a></li>
+            <li><a href="c1/42.html">四十二、 墨子怒耕柱子</a></li>
+            <li><a href="c1/43.html">四十三、 杀驼破瓮</a></li>
+            <li><a href="c1/44.html">四十四、 司马光破瓮</a></li>
+            <li><a href="c1/45.html">四十五、 文天祥书诗</a></li>
+            <li><a href="c1/46.html">四十六、 掩耳盗铃</a></li>
+            <li><a href="c1/47.html">四十七、 郑燮开仓赈济</a></li>
+            <li><a href="c1/48.html">四十八、 狐假虎威</a></li>
+            <li><a href="c1/49.html">四十九、 沉水为炭</a></li>
+            <li><a href="c1/50.html">五十、 欧阳询观石碑</a></li>
+            <li><a href="c1/51.html">五十一、 塞翁失马</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="content-area">
+            <h1>文言文 - 第一册</h1>
+            <p>欢迎阅读文言文。请在左侧目录中选择要阅读的章节，点击后将在本窗口加载相应内容。</p>
+            <p>本专辑收录了作者初中时期所有做过笔记的中国古代经典文献的精选篇章，涵盖哲学、历史、文学等多个领域，旨在帮助读者更好地理解和欣赏中华传统文化的精髓。</p>
+            <ul>
+                <li><a href="index.html">返回总目录</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
